@@ -1,0 +1,22 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false
+    }],
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "relay",
+    "transform-class-properties"
+  ],
+  "env": {
+    "schema-build": {
+      "presets": [
+        "env",
+        "react",
+        "stage-0"
+      ]
+    }
+  }
+}

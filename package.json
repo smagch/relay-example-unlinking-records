@@ -1,0 +1,35 @@
+{
+  "name": "relay-setvalue-null-example",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html",
+    "update-schema": "BABEL_ENV=schema-build babel-node ./scripts/updateSchema.js",
+    "lint": "eslint src",
+    "relay": "relay-compiler --src ./src --schema ./schema.graphql"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "graphql": "^0.13.2",
+    "graphql-relay": "^0.5.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-relay": "^1.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-relay": "^1.5.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.7.0",
+    "parcel-bundler": "^1.7.0",
+    "relay-compiler": "^1.5.0"
+  }
+}

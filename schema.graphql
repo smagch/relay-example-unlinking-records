@@ -1,0 +1,31 @@
+input ChangeNameInput {
+  id: ID!
+  name: String!
+  clientMutationId: String
+}
+
+type ChangeNamePayload {
+  renamedUser: User
+  clientMutationId: String
+}
+
+type Mutation {
+  changeName(input: ChangeNameInput!): ChangeNamePayload
+}
+
+"""An object with an ID"""
+interface Node {
+  """The id of the object."""
+  id: ID!
+}
+
+type Query {
+  users: [User!]!
+  user: User
+}
+
+type User implements Node {
+  """The ID of an object"""
+  id: ID!
+  name: String!
+}
