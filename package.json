@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "start": "parcel index.html",
+    "build": "parcel build index.html --out-dir ./docs --public-url .",
     "update-schema": "BABEL_ENV=schema-build babel-node ./scripts/updateSchema.js",
     "lint": "eslint src",
     "relay": "relay-compiler --src ./src --schema ./schema.graphql"
